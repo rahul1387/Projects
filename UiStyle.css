@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto+Mono:wght@300&family=Ubuntu&family=Varela+Round&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.main-div
+{
+    height: 100vh;
+    color:white;
+    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("https://images.unsplash.com/photo-1530053969600-caed2596d242?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+.navbar
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+a
+{
+    padding: 0 15px 0 15px;
+    color: white    ;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+}
+a:hover
+{
+    color: cadetblue;
+}
+li
+{
+    list-style: none;
+}
+ul
+{
+    display: flex;
+}
+.btn
+{
+    width: 5vw;
+    height: 3em;
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.5s;
+    border: 2px solid #279EFF;
+    color: #279EFF;
+}
+
+.btn:hover
+{
+    background-color: #279EFF;
+    color: black;
+}
+.content
+{
+    height: 600px;
+    width: 80%;
+    color: #fbfcfd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+    font-family: "Ubuntu", sans-serif;
+
+}
+h1{
+    font-size: 50px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+.btn1
+{
+    text-align: center;
+    margin-top: 15px;
+    border: 2px solid #fff;
+    color: #fff;
+    width: 7vw;
+    height: 3em;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.5s;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn1:hover
+{
+    font-weight: 600;
+    background-color: #279EFF;
+    color: black;
+}
+.slide-bar
+{
+    width: 50px;
+    height: 100vh;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menu
+{
+    background-color: #fff;
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+    background: transparent;
+}
+.bubbles img
+{
+    width: 10%;
+    animation: bubble 7s linear infinite;
+}
+.bubbles
+{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -150px;
+}
+.bubbles img:nth-child(1)
+{
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(2)
+{
+    animation-delay:1s;
+}
+.bubbles img:nth-child(3)
+{
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(4)
+{
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5)
+{
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(6)
+{
+    animation-delay: 6s;
+}
+.bubbles img:nth-child(7)
+{
+    animation-delay: 7s;
+}
+.bubbles img:nth-child(8)
+{
+    animation-delay: 5s;
+}
+@keyframes bubble {
+    0%
+    {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
