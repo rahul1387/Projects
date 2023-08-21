@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Ubuntu&family=Varela+Round&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+footer .container
+{
+    background-color: black;
+}
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px ;
+}
+.footer-col ul
+{
+    list-style: none;
+}
+.footer-col  h4
+{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+.footer-col  h4::before
+{
+    content: '';
+    width: 70px;
+    height: 2px;
+    position:absolute;
+    background-color: #e91e64;
+    bottom: -10px;
+}
+.footer-col ul li
+{
+    padding: 10px 0;
+}
+.footer-col ul li a 
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.footer-col ul li a:hover
+{
+    opacity: 1;
+}
+.footer-col input
+{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+    border-radius: 10px;
+}
+.submit-btn
+{
+    width: 45%;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 5px;   
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.submit-btn:hover
+{
+    color: rgb(255, 72, 0);
+    background-color: white;
+    border: none;
+}
+.col p 
+{
+    color: white;
+}
+.row hr
+{
+    opacity: 0.7;
+}
+.row .social-icons i
+{
+    display: inline-block;
+    color: white;
+    font-size: 2em;
+    margin: 0 15px;
+    transition:all 0.5s;
+}
+a{
+    text-decoration: none;
+}
+.row .social-icons i:hover
+{
+    color: rgb(255, 72, 0);
+}
+
+@media (max-width: 1000px)
+{
+    footer .row
+    {
+        flex-wrap: wrap;
+        padding: 20px 30px;
+    }
+    footer .footer-col ul
+    {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-col input
+    {
+        width: 100%;
+    }
+}
