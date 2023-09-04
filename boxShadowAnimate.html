@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        height: 98.2vh;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .shadow
+    {
+        color: white;
+        position: relative;
+        margin: 10em auto 0;
+        width:  12em;
+        height: 5em;
+        background: #000;
+        cursor: pointer;
+        border: 1px solid white;
+        transition: all 10s;
+        border-radius: 1em;
+    }
+    .shadow:hover
+    {
+        border-style: none;
+    }
+    .shadow:hover:before,
+    .shadow:hover:after
+    {
+        border-radius: 1em;
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00,#ff0000, #fb0094, #0000ff, #00ff00, #ffff00,#ff0000);
+        background-size: 400%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: animate 20s linear infinite;
+    }
+    .shadow::after
+    {
+        filter: blur(2em);
+    }
+    .big_box_shadow
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: relative;
+        margin: 10em auto 0;
+        width:  35em;
+        height: 30em;
+        background: #000;
+        border-radius: 1em;
+    }
+    .big_box_shadow:after,
+    .big_box_shadow:before
+    {
+        border-radius: 1em;
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00,#ff0000, #fb0094, #0000ff, #00ff00, #ffff00,#ff0000);
+        background-size: 200%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: animate 10s linear infinite;
+    }
+    .big_box_shadow:after
+    {
+        filter: blur(2em);
+    }
+    @keyframes animate 
+    {
+        0%
+        {
+            background-position: 0 0;
+        }
+        50%
+        {
+            background-position: 300% 300%;
+        }
+        100%
+        {
+            background-position: 0 0 ;
+        }
+    }
+    .apple_img
+    {
+        height: 15em;
+    }
+</style>
+<body>
+    <div class="big_box_shadow">
+        <img src="https://imgs.search.brave.com/slECA-UhOM1SgDt8hC1fAAyT64py3JvzNOGewS20OtY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMTEvQXBw/bGUtTG9nby1CYWNr/Z3JvdW5kLVBORy5w/bmc" class="apple_img"">
+    </div>
+    <button class="shadow">HOVER ME</button>
+</body>
+</html>
