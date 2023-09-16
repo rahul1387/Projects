@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .wrapper {
+        color: #fff;
+        font-family: 'Mooli', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        background-image: url("img/5166950.jpg"), linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .main-div h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .main-div .input_box {
+        width: 100%;
+        height: 50px;
+        margin: 2em 0;
+        color: black;
+    }
+    .main-div
+    {
+        text-align: center;
+        height: 25%;
+        width: 25%;
+        border: 2px solid white;
+        border-radius: 1em;
+    }
+    .input_box input
+    {
+        width: 50%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid white;
+        border-radius: 0.5em;
+        color: #fff;
+        padding-left: 1em;
+        margin-left: 2em;
+    }
+    .input_box input::placeholder
+    {
+        color: #fff;
+    }
+    .input_box i
+    {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+    }
+    .btn
+    {
+        cursor: pointer;
+        height: 3em;
+        width: 20em;
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 0.5em;
+        transition: all 0.5s;
+        margin: 1.5em;
+    }
+    .btn:hover
+    {
+        background-color: #fff;
+        color: #000;
+        font-weight: 400;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .remember_forget label
+    {
+        cursor: pointer;
+    }
+    .remember_forget a{
+        margin-left: 5em;
+    }
+    .register_link{
+        margin-bottom: 1em;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="main-div">
+            <h1>Login</h1>
+            <div class="input_box">
+                <input type="text" placeholder="Username" required>
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input_box">
+                <input type="password" placeholder="Password" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <div class="remember_forget">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forget password?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register_link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
